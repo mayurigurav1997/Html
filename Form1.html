@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   label{
+            display:block;
+            margin:10px;
+        }
+        .myGender{
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+        <div class="container">
+            <label>Name  <input type="text" name="myName" required placeholder="Enter your first name"></label>
+            <label for="">Password <input type="myPassword" name="password" placeholder="Enter your password"></label>
+            <label for="">Email: <input type="email" name="myEmail" id="" required multiple placeholder="Enter your email here"></label>
+            <label for="">Mobile No <input type="tel" name="myNumber" pattern="[0-9]{2}-[0-9]{10}" placeholder="xx-xxxxxxxxxx"id=""></label>
+            <label>Gender
+                <div class="myGender">
+                    <label for="myGender">Female:<input type="radio" name="myGender" value="Female"></label>
+                    <label for="myGender">Male:<input type="radio" name="myGender" value="Male"></label>
+                    <label for="myGender">Other:<input type="radio" name="myGender" value="Other"></label>
+                 </div>
+            </label>
+             Languages:
+             <label for=""><input type="checkbox" checked>Javascript</label>
+             <label for=""><input type="checkbox">Python</label>
+             <label for=""><input type="checkbox">Java</label>
+             <label for=""><input type="checkbox">C++</label>
+             <label for=""><input type="checkbox">C</label>
+            <label>Pick your favorite color  <input type="color" name="favColor" value="" id=""></label>
+            <label for="">Search the position: <input type="search" name="" id="" placeholder="Search here"></label>
+            <label for="">Enter your website URL: <input type="url" name="myWebsite" placeholder="http://example.com" id=""></label>
+            <label for="">Enter your Expected salary per Anum: <input type="number" name="mySalary" placeholder="  4,00,000" min="400000" max="1500000" step="100000" id=""></label>
+            <label for="">Select Start and End Date of previous Company:</label>
+            <label for="">Start Date: <input type="date" name="StartDate" id=""></label>
+            <label for="">End Date: <input type="date" name="EndDate" id=""></label>
+            <label for="">Enter your last month of working in previous company: <input type="month" name="myMonth" id=""></label>
+            <label>Enter your next possible joining week <input type="week" name="myJoining" id=""></label>
+            <label for="">Select Meeting Shedule:<input type="datetime-local" required></label>
+            <label>Select file to upload Resume: <input type="file" required> </label>
+            <input type="image" src="https://media.istockphoto.com/photos/magnet-and-figures-of-people-customer-acquisition-and-retention-picture-id1336139577" alt="Submit" width="80px"><br>
+            <input type="button" value="Click me" onclick="alert('You are learnig CSS')">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

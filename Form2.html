@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border:2px solid grey;
+            height:700px;
+            width:700px;
+            /* background-color:pink;; */
+        }
+        header{
+            border:2px solid grey;
+            margin:5px;
+            padding:20px;
+            text-align:center;
+            font-weight:bold;
+            font-size:2px;
+        }
+        .section{
+            display:flex;
+            flex-direction:column;
+            /* background-color: rgb(253, 152, 56); */
+        }
+        .section1{
+            display:flex;
+            flex-direction:row;
+            /* background-color: rgb(212, 14, 14); */
+        }
+        .section1 span{
+            border:2px solid grey;
+            width:200px;
+            height:15px;
+            padding:10px 10px;
+            margin:5px 5px;
+            text-align:center;
+            font-weight:bold;
+        }
+        .input-box{
+            border:2px solid grey;
+            width:500px;
+            height:15px;
+            padding:10px 10px;
+            margin:5px 5px;
+            text-align:left;
+            font-weight:bold;
+            display:flex;
+            align-items:center;
+        }
+        .section2{
+            display:flex;
+            flex-direction:row;
+            /* background-color: rgb(212, 14, 14); */
+        }
+        .section2 span{
+            border:2px solid grey;
+            width:200px;
+            height:100px;
+            padding:10px 10px;
+            margin:5px 5px;
+            text-align:center;
+            font-weight:bold;
+        }
+        .input-box-text{
+            border:2px solid grey;
+            width:450px;
+            height:100px;
+            padding:10px 10px;
+            margin:5px 5px;
+            text-align:left;
+            font-weight:bold;
+            display:flex;
+            align-items:center;
+        }
+        textarea{
+            text-align: center;
+            font-size:20px;
+        }
+        
+        
+        
+       input{
+           border:2px solid black;
+           border-radius:5px;
+       }
+       select{
+           width:150px;
+           height:20px;
+           border-radius: 5px;
+       }
+       .gender-box span{
+        border:none;
+        padding-left:0px;
+       }
+       .hobbies-box span{
+        border:none;
+        padding-left:0px;
+       }
+       button{
+           background-color:rgb(177, 163, 163);
+           font-weight:bold;
+           margin:10px 300px;
+           height:30px;
+           cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="submain">
+            <header>Enrollment Form</header>
+            <div class="section">
+                <div class="section1">
+                    <span>First Name</span> 
+                    <div class="input-box">
+                        <input type="text" name="myFirstName" required id="">
+                    </div>
+                </div>
+                <div class="section1">
+                    <span>Last Name</span> 
+                    <div class="input-box">
+                        <input type="text" name="myLastName" required id="">
+                    </div>
+                </div>
+                <div class="section1">
+                    <span>Email</span> 
+                    <div class="input-box">
+                        <input type="email" name="myEmail" placeholder="something@gmail.com" required id="">
+                    </div>
+                </div>
+                <div class="section1">
+                    <span>Password</span> 
+                    <div class="input-box">
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required name="myPassword" id="">
+                    </div>
+                </div>
+                <div class="section1">
+                    <span>DOB</span> 
+                    <div class="input-box">
+                        <input type="date" name="mybirthdate" id="">
+                    </div>
+                </div>
+                <div class="section1">
+                    <span>Upload</span> 
+                    <div class="input-box">
+                        <input type="file" name="myFile" id="">
+                    </div>
+                </div>
+                <div class="section1">
+                    <span>Gender</span> 
+                    <div class="input-box">
+                        <div class="gender-box">
+                            <input type="radio" name="myGender" checked id=""><span>Male</span>
+                        <input type="radio" name="myGender" id=""><span>Female</span>
+                        <input type="radio" name="myGender" id=""><span>Other</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section1">
+                    <span>Hobbies</span> 
+                    <div class="input-box">
+                        <div class="hobbies-box">
+                            <input type="checkbox" name="myCheckbox"  checked id=""><span>Music</span>
+                        <input type="checkbox" name="myCheckbox" checked id=""><span>Sports</span>
+                        <input type="checkbox" name="myCheckbox" checked id=""><span>Reading</span>
+                        <input type="checkbox" name="myCheckbox" id=""><span>Trekking</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section1">
+                    <span>Countries</span> 
+                    <div class="input-box">
+                        <select name="myCountry" id="">
+                            <option value="">India</option>
+                            <option value="">USA</option>
+                            <option value="">Canada</option>
+                            <option value="">UK</option>
+                        </select>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="section2">
+                <span>Comments</span> 
+                <div class="input-box-text">
+                    <textarea id="w3review" name="w3review" rows="4" cols="55">Write Something about yourself
+                        </textarea>
+                </div>
+            </div>
+                
+
+            <button>Submit</button>
+
+            
+        </div>
+    </div>
+</body>
+</html>
