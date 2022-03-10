@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+        }
+        .dropdown_button{
+            background-color: blue;
+            color:pink;
+            border:none;
+            outline:none;
+            font-size:30px;
+            cursor:pointer;
+            padding:14px 60px;
+            box-shadow:0px 0px 30px 1px;
+
+        }
+        .dropdown_list{
+            background-color:green;
+            width:200px;
+            box-shadow:0px 0px 30px 1px blue;
+            text-align:center;
+            display:none;
+            position:absolute;
+        }
+        .dropdown_list a:hover{
+            background-color:grey;
+        }
+        .dropdown:hover .dropdown_list{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+        <!-- label and input are inline elements -->
+        <label for="">Text box</label>
+        <input type="text"><br>
+        <label for="">Password</label>
+        <input type="password"><br>
+        <!-- name should be same for male female and other so it will select only one out of three choices -->
+        <input type="radio" name="test">Male<br>
+        <input type="radio" name="test">Female<br>
+        <input type="radio" name="test">Other<br>
+        <!-- checked will be default check that particular box -->
+        <input type="checkbox" id="1" checked>Item-1<br>
+        <input type="checkbox" id="2">Item-2<br>
+        <input type="checkbox" id="3">Item-3<br>
+        <label for="">Date</label>
+        <input type="date"><br>
+        <label for="">Week</label>
+        <input type="week"><br>
+        <label for="">Search</label>
+        <input type="search"><br>
+        <label for="">Email</label>
+        <input type="email"><br>
+        <input type="submit"><br>
+        <input type="number" min="0" max="20" step="2"></input>
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select>
+        <div class="dropdown">
+            <button class="dropdown-button">
+                <div class="dropdown-list">
+                    <a href="">HTML</a>
+                    <a href="">CSS</a>
+                    <a href="">Javascript</a>
+                    <a href="">React</a>
+                    <a href="">Angular</a>
+                    <a href="">Devops</a>
+                </div>
+            </button>
+        </div>
+    </form>
+</body>
+</html>

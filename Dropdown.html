@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 10;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dropdown-button{
+            background-color: green;
+            color:white;
+            border:none;
+            outline:none;
+            cursor:pointer;
+            padding:14px 60px;
+            box-shadow: 10px 10px 20px #102e10;
+        }
+        .dropdown-list{
+            background-color:wheat;
+            width:200px;
+            box-shadow:10px 10px 20px rgb(88, 88, 216);
+            position:absolute;
+            text-align:center;
+            display:none;
+
+        }
+        .dropdown-list a{
+            display:block;
+            color:violet;
+            text-decoration: none;
+            padding:20px;
+        }
+        .dropdown-list a:hover{
+            background-color:rgb(206, 81, 81);
+            color:white;
+            font-size:40px;
+        }
+        .dropdown:hover .dropdown-list{
+             display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdown-button">Courses</button>
+        <div class="dropdown-list">
+            <a href="">HTML</a>
+            <a href="">CSS</a>
+            <a href="">Javascript</a>
+            <a href="">Devops</a>
+        </div>
+    </div>
+</body>
+</html>

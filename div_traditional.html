@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Internal CSS -->
+     <style>
+         /* . is used for class */
+        .container,.header,.nav,.middle,.right,.left,.footer{
+            border:3px solid blue;
+            padding: 5px;
+            margin:10px;
+        }
+        .middle{
+            height:70px;
+        }
+        .left{
+            float:left;
+        }
+        .right{
+            float:right;
+        }
+        .footer{
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <!-- div*3 -->
+    <!-- Anything under div is manipulate using class and id -->
+    <!-- Traditional approach using div -->
+    <div id="test" class="container">
+        <!-- header and navigation -->
+        <div class="header">Header</div>
+        <div class="nav" id="nav">Navigation</div>
+        <!-- middle part -->
+        <div id="middle" class="middle">
+        Middle<br>
+          <div class="left">Left</div>
+          <div class="right">Right</div>
+        </div>
+        <!-- footer -->
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+       body{
+           font-family:Arial,sans-serif;
+       }
+       table,th,td{
+           border:2px solid blue;
+           text-align:center;
+           padding:10px;
+           font-size:15px;
+
+       }
+       table{
+           width:70%;
+           box-shadow:5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+       }
+       #test{
+           background-color:rgb(18, 219, 241);
+           color:rgba(0, 128, 0, 0.844);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead id="test">
+            <tr>
+                <th>SL.NO</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Amazon</td>
+                <td>Manager</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jackey</td>
+                <td>Google</td>
+                <td>SDE-1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jenny</td>
+                <td>Flipkart</td>
+                <td>SDE-2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Laura</td>
+                <td>Dell</td>
+                <td>Buisness Analyst</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!-- Table with colspan -->
+    <table border="1" cellspacing="4" cellspading="10">
+        <thead>
+            <tr>
+                <th>SL.NO</th>
+                <th colspan="2">Name</th>
+                <th>Company</th>
+                <th>Designation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Grainger</td>
+                <td>Amazon</td>
+                <td>Manager</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jackey</td>
+                <td>Mosbey</td>
+                <td>Google</td>
+                <td>SDE-1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jenny</td>
+                <td>Potter</td>
+                <td>Flipkart</td>
+                <td>SDE-2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Laura</td>
+                <td>Stingson</td>
+                <td>Dell</td>
+                <td>Buisness Analyst</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!-- verticle table with a row span -->
+    <table border="10" cellspacing="10" cellspading="5">
+            <tr>
+                <th>SL.NO</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>John</td>
+                <td>Jackey</td>
+                <td>Jenny</td>
+                <td>Laura</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Company</th>
+                <td>Amazon</td>
+                <td>Google</td>
+                <td>Flipkart</td>
+                <td>Dell</td>
+            </tr>
+            <tr>
+                <td>Mumbai</td>
+                <td>Pune</td>
+                <td>Delhi</td>
+                <td>Kolkata</td>
+            </tr>
+            <tr>
+                  <th>Designation</th>
+                  <td>Manager</td>
+                  <td>SDE-1</td>
+                  <td>SDE-2</td>
+                  <td>Buisness Analyst</td>
+             </tr>
+        </tbody>
+</body>
+</html>

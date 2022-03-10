@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+           padding:10px;
+           margin:10px;
+       }
+       h3{
+           background-color:pink;
+           padding:5px;
+           padding:5px;
+           display:inline;
+       }
+       span{
+           background-color:orange;
+           padding:5px;
+           margin:5px;
+           display:block;
+       }
+       a{
+           background-color:rgb(33, 213, 33);
+           color:red;
+           padding:5px;
+           margin:5px;
+           display:block;
+       }
+       input{
+           display:block;
+           padding:5px;
+           outline:none;
+           gap:10px;  
+       }
+       section article{
+           background-color:yellow;
+           color:blue;
+           width:300px;
+           display:inline-block;
+           /* when full page it will show in inline and when in smalll it will block */
+       }
+    </style>
+</head>
+<body>
+    <!-- display-inline level: inline -->
+    <div>
+        <h3>Dell</h3>
+        <h3>Hp</h3>
+        <h3>Mac</h3>
+        <h3>Lenovo</h3>
+        <h3>Asus</h3>
+    </div>
+
+    <!-- display block level: inline -->
+    <div>
+        <p>Lorem ipsum 
+            <span>1.It is a span</span>
+            <span>2.It is a span</span>
+            <span>3.It is a span</span>dolor sit.
+        </p>
+    </div>
+    
+    <div class="div-block"> 
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Tech</a>
+    </div>
+
+    <div>
+        <form action="">
+            Text:<input type="text">
+            Password:<input type="password">
+            <input type="submit">
+        </form>
+    </div>
+
+    <section>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </article>
+    </section>
+</body>
+</html>
